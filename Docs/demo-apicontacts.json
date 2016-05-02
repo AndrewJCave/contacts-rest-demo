@@ -1,0 +1,136 @@
+{
+  "_type": "export",
+  "__export_format": 1,
+  "__export_date": "2016-04-22T03:11:22.209Z",
+  "__export_source": "insomnia.chrome.app:v2.6.10",
+  "items": [
+    {
+      "_type": "request_group",
+      "_id": "grp_1460674799450",
+      "name": "DEMO API\\Contacts",
+      "environments": {},
+      "requests": [
+        {
+          "_type": "request",
+          "_id": "req_1460965816069",
+          "url": "http://localhost:8888/contacts-rest-demo/api/1.0",
+          "method": "GET",
+          "body": "{\n    \"title\" : \"Mr\",\n    \"first_name\" : \"John\",\n    \"last_name\" : \"Cave\",\n    \"birthday\" : \"1940-08-04\",\n    \"phone\" : \"555-123456\",\n    \"mobile\" : \"040123456\",\n    \"company\" : \"Family Matters\",\n    \"job_title\" : \"Director\",\n    \"email\" : \"john@familymatters.com\",\n    \"website\" : \"http://wpdevhouse.com\",\n    \"notes\" : \"Organiser extroadinaire\"\n}",
+          "headers": [],
+          "params": [
+            {
+              "name": "apiKey",
+              "value": "78bc388921b363e5ea8d67a22cca3806"
+            },
+            {
+              "name": "request",
+              "value": "contact"
+            },
+            {
+              "name": "params[id]",
+              "value": "84"
+            }
+          ],
+          "authentication": {
+            "_type": "basic",
+            "username": "",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "Get Contact By Id"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1460966549015",
+          "url": "http://localhost:8888/contacts-rest-demo/api/1.0",
+          "method": "GET",
+          "body": "{}",
+          "headers": [],
+          "params": [
+            {
+              "name": "request",
+              "value": "contact"
+            },
+            {
+              "name": "apiKey",
+              "value": "78bc388921b363e5ea8d67a22cca3806"
+            }
+          ],
+          "authentication": {
+            "_type": "basic",
+            "username": "",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "Get All Contacts"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1460674799450",
+          "url": "http://localhost:8888/contacts-rest-demo/api/1.0",
+          "method": "PUT",
+          "body": "{\n    \"title\" : \"Mr\",\n    \"first_name\" : \"Andrew\",\n    \"last_name\" : \"Cave\",\n    \"company\" : \"Family Matters\",\n    \"job_title\" : \"Director\",\n    \"email\" : \"andrew@familymatters.com\",\n    \"phone\" : \"555-123456\",\n    \"mobile\" : \"040123456\",\n    \"website\" : \"http://wpdevhouse.com\",\n    \"notes\" : \"Organiser extroadinaire v2.0\"\n}",
+          "headers": [],
+          "params": [
+            {
+              "name": "apiKey",
+              "value": "78bc388921b363e5ea8d67a22cca3806"
+            },
+            {
+              "name": "request",
+              "value": "contact"
+            }
+          ],
+          "authentication": {
+            "_type": "basic",
+            "username": "",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "Add Contact"
+        },
+        {
+          "_type": "request",
+          "_id": "req_1461209781527",
+          "url": "http://localhost:8888/contacts-rest-demo/api/1.0",
+          "method": "DELETE",
+          "body": "",
+          "headers": [],
+          "params": [
+            {
+              "name": "apiKey",
+              "value": "78bc388921b363e5ea8d67a22cca3806"
+            },
+            {
+              "name": "request",
+              "value": "contact"
+            },
+            {
+              "name": "params[id]",
+              "value": "89"
+            }
+          ],
+          "authentication": {
+            "_type": "basic",
+            "username": "",
+            "password": ""
+          },
+          "__insomnia": {
+            "format": "json",
+            "panel_width": 0.5
+          },
+          "name": "Delete Contact By Id"
+        }
+      ]
+    }
+  ]
+}
